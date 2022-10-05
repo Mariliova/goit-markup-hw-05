@@ -53,8 +53,8 @@
 
     <main>
       <section class="hero">
-          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-btn btn" type="button">Замовити послугу</button>
+        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+        <button class="hero-btn btn" type="button" data-modal-open>Замовити послугу</button>
       </section>
 
       <section class="features section">
@@ -113,10 +113,11 @@
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="activities-list list">
-            <li class="item">
+            <li class="activities-item">
               <img class="img" src="./images/img1.jpg" alt="кодування" width="370" height="294" />
+              <p class="activities-text">Десктопні додатки</p>
             </li>
-            <li class="item">
+            <li class="activities-item">
               <img
                 class="img"
                 src="./images/img2.jpg"
@@ -124,9 +125,11 @@
                 width="370"
                 height="294"
               />
+              <p class="activities-text">Мобільні додатки</p>
             </li>
-            <li class="item">
+            <li class="activities-item">
               <img class="img" src="./images/img3.jpg" alt="дизайн" width="370" height="294" />
+              <p class="activities-text">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
@@ -502,5 +505,17 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <div class="close" data-modal-close>
+          <svg class="close-icon" width="18" height="18">
+            <use href="./images/symbol-defs.svg#icon-close" />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
