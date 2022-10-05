@@ -473,12 +473,19 @@ body {
   display: block;
 }
 
-.activities-text {
+.activities-thumb {
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.activities-text {
   margin: 0;
 
   font-weight: 700;
@@ -489,7 +496,6 @@ body {
   text-transform: uppercase;
 
   color: var(--color-white);
-  background: rgba(47, 48, 58, 0.8);
 }
 
 /* Team */
@@ -706,12 +712,13 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
 
   opacity: 1;
-  transition: opacity 250ms var(--cubic);
+  transition: opacity 250ms var(--cubic), visibility 250ms var(--cubic);
 }
 
-.backdrop.is-hidden{
+.backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
 }
 
 .backdrop.is-hidden .modal {
